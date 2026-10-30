@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación de Boda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --sage-green: #6b705c;
+            --dark-sage: #4a4e3d;
+            --soft-rose: #ddbea9;
+            --dusty-rose: #cb997e;
+            --cream-bg: #ffe8d6;
+            --paper-bg: #fffbf7;
+            --text-color: #3f4238;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--sage-green);
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .card-container {
+            background-color: var(--paper-bg);
+            border: 2px solid var(--soft-rose);
+            border-radius: 12px;
+            max-width: 420px;
+            width: 100%;
+            padding: 40px 25px;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        .header-subtitle {
+            font-family: 'Cinzel', serif;
+            font-size: 0.8rem;
+            letter-spacing: 3px;
+            color: var(--dusty-rose);
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .couples-names {
+            font-family: 'Alex Brush', cursive;
+            font-size: 3.8rem;
+            color: var(--dark-sage);
+            line-height: 1.2;
+            margin: 15px 0;
+        }
+
+        .ampersand {
+            font-family: 'Cinzel', serif;
+            font-size: 1.6rem;
+            color: var(--dusty-rose);
+            display: block;
+            margin: 5px 0;
+        }
+
+        .divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, var(--soft-rose), transparent);
+            margin: 25px auto;
+            width: 70%;
+        }
+
+        .invitation-text {
+            font-size: 0.85rem;
+            color: var(--text-color);
+            line-height: 1.6;
+            letter-spacing: 1px;
+            margin-bottom: 25px;
+        }
+
+        .location-tag {
+            font-family: 'Cinzel', serif;
+            font-size: 1.1rem;
+            color: var(--dark-sage);
+            margin-bottom: 20px;
+        }
+
+        .date-box {
+            background-color: #f4edea;
+            border: 1px dashed var(--dusty-rose);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+
+        .date-text {
+            font-family: 'Cinzel', serif;
+            font-size: 0.95rem;
+            letter-spacing: 2px;
+            color: var(--dark-sage);
+            font-weight: 600;
+        }
+
+        .btn-rsvp {
+            display: inline-block;
+            background-color: var(--sage-green);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-rsvp:hover {
+            background-color: var(--dark-sage);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card-container">
+        <p class="header-subtitle">Una Carta de Amor De</p>
+
+        <h1 class="couples-names">
+            Clara
+            <span class="ampersand">&</span>
+            Elliot
+        </h1>
+
+        <div class="divider"></div>
+
+        <p class="invitation-text">
+            Tienen el honor de invitarle a celebrar la unión de sus vidas en matrimonio.
+        </p>
+
+        <p class="location-tag">Occitanie, Francia</p>
+
+        <div class="date-box">
+            <p class="date-text">SÁBADO, 21 DE JUNIO DE 2027</p>
+        </div>
+
+        <a href="#" class="btn-rsvp">CONFIRMAR ASISTENCIA</a>
+    </div>
+
+</body>
+</html>
